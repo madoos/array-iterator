@@ -11,5 +11,27 @@ To install:
 In your project:
 
 ``` javascript
- // => Example
+
+const arrayIterator = require('madoos-array-iterator')
+
+const arr = [1, 2, 3, 4, 5]
+arrayIterator(arr)
+
+while (arr.hasNext()) {
+  console.log(arr.current())
+  arr.next()
+  // => 1
+  // => 2
+  // => 3
+  // => 4
+  // => 5
+}
+
 ```
+
+## Funtions
+
+ * `.hasNext`
+ * `.next`
+ * `.prev`
+ * `.current`
